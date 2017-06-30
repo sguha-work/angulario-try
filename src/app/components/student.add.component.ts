@@ -11,10 +11,11 @@ export class StudentAdd {
     public studentName: String;
     constructor() {
         this.studentName="";
+        this.students = [];
     }
-    public setStudent():void {alert(this.studentName);
+    public setStudent():void {
         let student: Student;
         student = new Student(this.studentName);
-        this.students.push(student);
+        this.students.push(student);console.log(this.students);
     }
 }
